@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="C:\wamp\www\promo\promo.clpprj">
+	<settings><PM_URL><![CDATA[http://localhost/promo/]]></PM_URL><PM_HOME_URL><![CDATA[http://localhost/promo/]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";"/><added value=""/><dplmenupath>
+	</dplmenupath><smartyassings>
+	</smartyassings><codestructure>
+		<csfile name="C:\wamp\www\promo\promo.clpprj" crc="-1309501870">
+		</csfile><csfile name="C:\wamp\www\promo\jquery\jquery-blink\fcarriedo-jquery-blink-c0b98c2\lib\jquery.blink.js" crc="1378632233">
+			<jstree>
+				<treenode node="toggleFade;JS:Function Name;5;31;5;50;34;;;v;;r;;d27,31;;b0,0;;m">
+					<treenode node="blinkCount;JS:JS Var Name;8;36;18;36;34;;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="blinkElem;JS:JS Var Name;8;34;17;34;34;;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="maxBlinksReached;JS:JS Var Name;10;32;26;32;34;;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="on;JS:JS Var Name;9;33;11;33;34;;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="settings;JS:JS Var Name;25;34;33;34;34;;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="toggleFade;JS:JS Var Name;19;48;29;48;34;;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="blinkCount;JS:JS Var Name;8;27;18;27;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="blinkElem;JS:JS Var Name;8;25;17;25;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="blinkPeriod;JS:JS Var Name;6;15;17;15;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="i;JS:JS Var Name;30;17;31;17;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="jQuery;JS:JS Var Name;3;54;9;54;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="maxBlinks;JS:JS Var Name;6;14;15;14;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="on;JS:JS Var Name;8;26;10;26;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="onBlink;JS:JS Var Name;6;17;13;17;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="onMaxBlinks;JS:JS Var Name;6;16;17;16;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="options;JS:JS Var Name;25;11;32;11;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="settings;JS:JS Var Name;8;13;16;13;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="speed;JS:JS Var Name;6;18;11;18;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="undefined;JS:JS Var Name;21;14;30;14;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</jstree>
+		</csfile><csfile name="C:\wamp\www\promo\jquery\jquery-blink\fcarriedo-jquery-blink-c0b98c2\example\jquery-blink.example.html" crc="471549558">
+			<jstree>
+				<treenode node="colors;JS:JS Var Name;7;37;13;37;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="document;JS:JS Var Name;5;39;13;39;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="i;JS:JS Var Name;25;49;26;49;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="maxBlinks;JS:JS Var Name;7;45;16;45;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="onBlink;JS:JS Var Name;7;49;14;49;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="onMaxBlinks;JS:JS Var Name;7;46;18;46;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</jstree>
+		</csfile><csfile name="C:\wamp\www\promo\jquery\jquery-blink\test.html" crc="-1981078331">
+		</csfile><csfile name="C:\wamp\www\promo\jquery\jquery-blink\jquery-blink.js" crc="-2103471575">
+			<jstree>
+				<treenode node="defaults;JS:JS Var Name;6;4;14;4;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="delay;JS:JS Var Name;19;4;24;4;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="jQuery;JS:JS Var Name;2;23;8;23;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="obj;JS:JS Var Name;7;9;10;9;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="options;JS:JS Var Name;23;2;30;2;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</jstree>
+		</csfile><csfile name="C:\wamp\www\promo\jquery\jquery-blink\jquery-1.3.2.min.js" crc="201919439">
+		</csfile><csfile name="C:\wamp\www\promo\jquery\jquery.min14.js" crc="352367924">
+		</csfile><csfile name="C:\wamp\www\promo\jquery\jquery.min.js" crc="201919439">
+		</csfile><csfile name="C:\wamp\www\promo\jquery\jquery.color.js" crc="186317709">
+		</csfile><csfile name="C:\wamp\www\promo\jquery\jquery-ui.js" crc="1938439187">
+		</csfile><csfile name="C:\wamp\www\promo\jquery\jquery-1.9.1.js" crc="831026166">
+		</csfile><csfile name="C:\wamp\www\promo\index.html" crc="-1791279943">
+			<jstree>
+				<treenode node="showcontent;JS:Function Name;2;118;3;292;34;;;v;;r;;d25,275;;b0,0;;m">
+					<treenode node="buttons;JS:JS Var Name;3;125;10;125;34;;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="close;JS:JS Var Name;12;126;17;126;34;;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="draggable;JS:JS Var Name;3;121;12;121;34;;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="ev;JS:JS Var Name;28;126;30;126;34;;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="height;JS:JS Var Name;3;127;9;127;34;;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="hide;JS:JS Var Name;3;124;7;124;34;;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="modal;JS:JS Var Name;3;123;8;123;34;;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="resizable;JS:JS Var Name;12;122;21;122;34;;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="show;JS:JS Var Name;3;120;7;120;34;;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="ui;JS:JS Var Name;32;126;34;126;34;;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="width;JS:JS Var Name;3;128;8;128;34;;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="window;JS:JS Var Name;13;127;19;127;34;;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="active;JS:JS Var Name;1;202;7;202;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="backgroundColor;JS:JS Var Name;10;100;25;100;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="blinkPeriod;JS:JS Var Name;5;34;16;34;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="collapsible;JS:JS Var Name;1;203;12;203;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="document;JS:JS Var Name;2;29;10;29;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="heightStyle;JS:JS Var Name;0;201;11;201;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="maxBlinks;JS:JS Var Name;5;33;14;33;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="nextItem;JS:JS Var Name;8;72;16;72;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="onBlink;JS:JS Var Name;5;35;12;35;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="onMaxBlinks;JS:JS Var Name;5;36;16;36;34;;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</jstree>
+		</csfile></codestructure><dbgurls>
+	</dbgurls>
+</project>
