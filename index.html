@@ -1,0 +1,1671 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Aztelekom İstehsalat Birliyi</title>
+<meta name="" content="">
+ <link rel="stylesheet" href="css/jquery-ui.css" />
+ <link rel="stylesheet" href="css/style7.css" />
+ <link rel="stylesheet" href="css/css.css" />
+
+  <script src="jquery/jquery-1.9.1.js"></script>
+  <script src="jquery/jquery-ui.js"></script>
+</head>
+<body>
+<div class="header" id="header"><div class="subheader"><img height="80px" src="logo.png" align="middle"/> <span style="color:#eae400; margin-left:150px; font-weight: bold; font-size: 35px">Aztelekom İstehsalat Birliyi</span> </div></div>
+<!--<div  id="buttons" align="center">
+<a href="#" id="bt1" class="button" >
+<img height="120" src="about.png"/><br/>
+Haqqımızda</a>
+<a href="#" id="bt2"  class="button" >Xidmətlər</a>
+<a href="#"  id="bt3" class="button" >Tariflər</a>
+<a href="#" id="bt4"  class="button" >Xidmət ərazisi</a>
+<a href="#" id="bt5"  class="button" >Qoşulma qaydaları</a>
+<a href="#"  id="bt6" class="button" >Bizimlə əlaqə</a>
+</div>-->
+
+<script src="jquery/jquery-blink/fcarriedo-jquery-blink-c0b98c2/lib/jquery.blink.js"></script>
+<script type="text/javascript" language="javascript">
+ 
+$(document).ready(function()
+{
+
+	$('#bt1').blink({
+	    maxBlinks: 0, 
+	    blinkPeriod: 1000,   // in milliseconds
+	    onBlink: function(){}, 
+	    onMaxBlinks: function(){}
+	});
+	$('#bt2').blink({
+	    maxBlinks: 120, 
+	    blinkPeriod: 1200,   // in milliseconds
+	    onBlink: function(){}, 
+	    onMaxBlinks: function(){}
+	});
+	$('#bt3').blink({
+	    maxBlinks: 120, 
+	    blinkPeriod: 1400,   // in milliseconds
+	    onBlink: function(){}, 
+	    onMaxBlinks: function(){}
+	});
+	$('#bt4').blink({
+	    maxBlinks: 120, 
+	    blinkPeriod: 1600,   // in milliseconds
+	    onBlink: function(){}, 
+	    onMaxBlinks: function(){}
+	});
+	$('#bt5').blink({
+	    maxBlinks: 120, 
+	    blinkPeriod: 1500,   // in milliseconds
+	    onBlink: function(){}, 
+	    onMaxBlinks: function(){}
+	});
+	$('#bt6').blink({
+	    maxBlinks: 120, 
+	    blinkPeriod: 1300,   // in milliseconds
+	    onBlink: function(){}, 
+	    onMaxBlinks: function(){}
+	});
+	
+});
+
+setInterval(function() {
+    var nextItem = $('.slider_item.active').fadeOut().removeClass('active').next('.slider_item');
+
+    if (nextItem.length === 0) {
+        nextItem = $('.slider_item').first();
+    }
+
+    nextItem.fadeIn().addClass('active ');
+}, 2000); 
+</script>
+
+<div id="letter-container" class="letter-container">
+<h2><a id="bt1" href="#"><span class="char1">
+<img style="margin-top:10px; margin-bottom:5px;" height="90px;"  src="about.png"/><br/>HAQQIMIZDA</span></a>
+<a id="bt2" href="#"><span style="white-space: nowrap" class="char3">
+<img style="margin-top:5px; margin-bottom:5px;" height="90px;"  src="area.png"/><br/>XİDMƏT ƏRAZİSİ</span></a>
+<a id="bt3" href="#"><span class="char2">
+<img style="margin-top:10px; margin-bottom:5px;" height="90px;"  src="services.png"/><br/>XİDMƏTLƏR</span></a>
+<a id="bt4" href="#"><span class="char4">
+<img style="margin-top:5px; margin-bottom:5px;" height="90px;"  src="tariff.png"/><br/>TARİFLƏR</span></a>
+<a id="bt5" href="#"><span class="char5">
+<img style="margin-top:5px; margin-bottom:5px;" height="90px;"  src="connection.png"/><br/>QOŞULMA</span></a>
+<a id="bt6" href="#"><span class="char6">
+<img style="margin-top:5px; margin-bottom:5px;" height="90px;"  src="contacts.png"/><br/>ƏLAQƏ</span></a></h2>
+			</div>
+ <script>
+  $(function() {
+     $( ".button" ).mouseover(function() {
+          $( this).animate({
+          backgroundColor: "#3072b3",
+                 }, 200 );
+      });
+	   $( ".button" ).mouseleave(function() {
+        $( this ).animate({
+          backgroundColor: "#ececec",
+                 }, 700 );
+      })
+	  } )
+	  
+	  </script>
+<script>
+	   $(function() {
+      $("#bt1").mousedown(function(){
+	  	$("#letter-container").hide('fade',500,function() {;
+	 showcontent();
+	  })
+	  })
+	 function showcontent (){	  	
+	  	$(".bt1").dialog({
+			show: 'blind',
+			draggable: false,
+            resizable: false,
+			modal:true,
+			hide: 'blind',
+			buttons:{ "Geri": function() { $(this).dialog("close"); } },
+            close: function(ev, ui) { $(this).remove(); },
+			height: $(window).height()-10,
+			width:  $(window).width()-30,
+			close:function(){
+			$("#letter-container").show('fade',100);
+			}
+		});
+		$(".ui-dialog-titlebar").css("background","#3072b3");
+		$(".ui-dialog-titlebar").css("color","white");
+		}
+    });
+
+ </script>
+ 
+ <script>
+	   $(function() {
+      $("#bt2").mousedown(function(){
+	  	$("#letter-container").hide('fade',500,function() {;
+	 showcontent();
+	  })
+	  })
+	 function showcontent (){	  	
+	  	$(".bt4").dialog({
+			show: 'blind',
+			draggable: false,
+            resizable: false,
+			modal:true,
+			buttons:{ "Geri": function() { $(this).dialog("close"); } },
+            close: function(ev, ui) { $(this).remove(); },
+			hide: 'blind',
+			height: $(window).height()-10,
+			width:  $(window).width()-30,
+			close:function(){
+			$("#letter-container").show('fade',100);
+			}
+		});
+		$(".ui-dialog-titlebar").css("background","#3072b3");
+		$(".ui-dialog-titlebar").css("color","white");
+		}
+    });
+
+ </script>
+ 
+ <script>
+	   $(function() {
+      $("#bt3").mousedown(function(){
+	  	$("#letter-container").hide('fade',500,function() {;
+	 showcontent();
+	  })
+	  })
+	 function showcontent (){	  	
+	  	$(".bt2").dialog({
+			show: 'blind',
+			draggable: false,
+            resizable: false,
+			modal:true,
+			buttons:{ "Geri": function() { $(this).dialog("close"); } },
+            close: function(ev, ui) { $(this).remove(); },
+			hide: 'blind',
+			height: $(window).height()-10,
+			width:  $(window).width()-30,
+			close:function(){
+			$("#letter-container").show('fade',100);
+			}
+		});
+		$(".ui-dialog-titlebar").css("background","#3072b3");
+		$(".ui-dialog-titlebar").css("color","white");
+		}
+    });
+
+ </script>
+ 
+ <script>
+	   $(function() {
+	   	$("#accordion").accordion({
+heightStyle: "content",
+ active: false,
+ collapsible: true 
+
+  });
+  $("#accordion2").accordion({
+heightStyle: "content",
+ collapsible: true ,
+ active: false
+
+  });
+      $("#bt4").mousedown(function(){
+	  	$("#letter-container").hide('fade',500,function() {;
+	 showcontent();
+	  })
+	  })
+	 function showcontent (){	  	
+	  	$(".bt3").dialog({
+			show: 'blind',
+			draggable: false,
+            resizable: false,
+			modal:true,
+			buttons:{ "Geri": function() { $(this).dialog("close"); } },
+            close: function(ev, ui) { $(this).remove(); },
+			hide: 'blind',
+			height: $(window).height()-10,
+			width:  $(window).width()-30,
+			close:function(){
+			$("#letter-container").show('fade',100);
+			}
+		});
+		$(".ui-dialog-titlebar").css("background","#3072b3");
+		$(".ui-dialog-titlebar").css("color","white");
+		}
+    });
+
+ </script>
+ 
+ <script>
+	   $(function() {
+      $("#bt5").mousedown(function(){
+	  	$("#letter-container").hide('fade',500,function() {;
+	 showcontent();
+	  })
+	  })
+	 function showcontent (){	  	
+	  	$(".bt5").dialog({
+			show: 'blind',
+			draggable: false,
+            resizable: false,
+			modal:true,
+			buttons:{ "Geri": function() { $(this).dialog("close"); } },
+            close: function(ev, ui) { $(this).remove(); },
+			hide: 'blind',
+			height: $(window).height()-10,
+			width:  $(window).width()-30,
+			close:function(){
+			$("#letter-container").show('fade',100);
+			}
+		});
+		$(".ui-dialog-titlebar").css("background","#3072b3");
+		$(".ui-dialog-titlebar").css("color","white");
+		}
+    });
+
+ </script>
+ 
+ <script>
+	   $(function() {
+      $("#bt6").mousedown(function(){
+	  	$("#letter-container").hide('fade',500,function() {;
+	 showcontent();
+	  })
+	  })
+	 function showcontent (){	  	
+	  	$(".bt6").dialog({
+			show: 'blind',
+			draggable: false,
+            resizable: false,
+			modal:true,
+			buttons:{ "Geri": function() { $(this).dialog("close"); } },
+            close: function(ev, ui) { $(this).remove(); },
+			hide: 'blind',
+			height: $(window).height()-10,
+			width:  $(window).width()-30,
+			close:function(){
+			$("#letter-container").show('fade',100);
+			}
+		});
+		$(".ui-dialog-titlebar").css("background","#3072b3");
+		$(".ui-dialog-titlebar").css("color","white");
+		}
+    });
+
+ </script>
+
+  <div class="bt1" title="Haqqımızda" style="display: none">
+<div id="accordion">
+
+  <h3><a href="#">Tarixi</a></h3>
+
+  <div>"AZTELEKOM" İstehsalat Birliyi Azərbaycan Respublikası Prezidentinin 02 iyul 1992-ci il 13 nömrəli sərəncamına müvafiq olaraq, Azərbaycan Respublikası Rabitə Nazirinin 09.09.1992-ci il 107 nömrəli əmri ilə 1992-ci ildə yaradılmışdır.</div>
+
+  <h3><a href="#">Rəhbərlik</a></h3>
+
+  <div align="center"><img src="struktur.png" height="480px"/></div>
+  <h3><a href="#">Struktur</a></h3>
+
+  <div align="center"><img src="st.png" height="480px"/></div>
+
+  <h3><a href="#">Qəbul Günləri</a></h3>
+
+  <div align="center"><!--<b>Baş Direktor M.Ə.Məmmədov</b><br/>
+Qəbul günləri: Çərşənbə axşamı, saat 17<sup>00</sup>-19<sup>00</sup>
+<br/><br/><hr/>
+<b>Texniki Direktor<br/>
+Baş Direktorun I müavini  Z.M.Vəliyev</b><br/>
+Qəbul günləri: Çərşənbə və cümə günləri, saat 17<sup>00</sup>-19<sup>00</sup><br/><hr/>
+<b>Baş Direktorun müavini M.H.Həsənov</b><br/>
+Qəbul günləri: Çərşənbə və cümə günləri, saat 17<sup>00</sup>-19<sup>00</sup><br/><br/><hr/>
+<b>Baş Direktorun müavini  T.Y.Məmmədov</b><br/>
+Qəbul günləri: Çərşənbə və cümə günləri, saat 17<sup>00</sup>-19<sup>00</sup><br/><br/><hr/>-->
+<img  src="qebul.png" height="490px;"/>
+</div>
+</div>
+ 
+<!--<div id="close" align="right"><a href="javascript:void()" onclick="$(this).dialog('close')" class="close">< Geri</a></div>--></div>
+  <div class="bt2" title="Xidmətlər" style="display: none">
+ <ul style="font-size: 26px;">
+ <li>Yerli telefon xidmətləri.</li><br/>
+<li>Şəhərlərarası və beynəlxalq danışıq xidmətləri.</li><br/>
+<li>"107" sifariş vasitəsi ilə şəhərlərarası və beynəlxalq danışıqlar xidməti.</li><br/>
+<li>CDMA texnologiyası vasitəsilə naqilsiz telefon xidməti.</li><br/>
+<li>"TAC kart" danışıq kartı vasitəsi ilə şəhərlərarası və beynəlxalq danışıq xidməti.</li><br/>
+<li>SMS xidməti.</li><br/>
+<li>İP TV və İP telefoniya xidməti.</li><br/>
+<li>DATA və sürətli İNTERNET xidməti.</li><br/>
+<li>Video konfrans xidməti.</li>
+</ul>
+  </div>
+  <div align="center" class="bt3" title="Tariflər" style="display: none">
+  <div id="accordion2">
+
+  <h3><a href="#">Şəhərlərarası və beynəlxalq telefon rabitəsi xidmətləri üçün tariflər</a></h3>
+
+  <div>
+ <table border=0 cellpadding=0 cellspacing=0 width=1387 style='border-collapse:collapse;table-layout:fixed;width:100%'>
+ <col width=64 style='width:48pt'>
+ <col width=1001 style='mso-width-source:userset;mso-width-alt:36608;
+ width:751pt'>
+ <col width=103 style='mso-width-source:userset;mso-width-alt:3766;width:77pt'>
+ <col width=155 style='mso-width-source:userset;mso-width-alt:5668;width:116pt'>
+ <col width=64 style='width:48pt'>
+ <tr height=67 style='mso-height-source:userset;height:50.25pt'>
+  <td rowspan=2 height=134 class=xl6611743 width=64 style='border-bottom:1.5pt solid white;
+  height:100.5pt;width:48pt'>¹</td>
+  <td rowspan=2 class=xl7011743 width=1001 style='border-right:1.5pt solid white;
+  border-bottom:1.5pt solid white;width:751pt'>Xidm&#601;tl&#601;rin ad&#305;</td>
+  <td colspan=2 class=xl6811743 width=258 style='border-right:1.5pt solid white;
+  border-left:none;width:193pt'>Tarif (&#399;DV daxil olmaqla) manat</td>
+  <td class=xl6511743 width=64 style='width:48pt'>&nbsp;</td>
+ </tr>
+ <tr height=67 style='mso-height-source:userset;height:50.25pt'>
+  <td height=67 class=xl7111743 width=103 style='height:50.25pt;border-top:
+  none;border-left:none;width:77pt'>&#399;hali &uuml;&ccedil;&uuml;n</td>
+  <td class=xl7111743 width=155 style='border-top:none;border-left:none;
+  width:116pt'>&#304;dar&#601;, m&uuml;&#601;ssis&#601; v&#601;
+  t&#601;&#351;kilatlar</td>
+  <td class=xl6511743>&nbsp;</td>
+ </tr>
+ <tr height=46 style='mso-height-source:userset;height:34.5pt'>
+  <td height=46 class=xl7711743 width=64 style='height:34.5pt;border-top:none;
+  width:48pt'>1</td>
+  <td class=xl7911743 width=1001 style='width:751pt'>&#350;&#601;h&#601;rl&#601;raras&#305;
+  telefon dan&#305;&#351;&#305;qlar&#305;n&#305;n bir d&#601;qiq&#601;si</td>
+  <td class=xl7211743 width=103 style='border-top:none;width:77pt'>&nbsp;</td>
+  <td class=xl7211743 width=155 style='border-top:none;border-left:none;
+  width:116pt'>&nbsp;</td>
+  <td class=xl6511743>&nbsp;</td>
+ </tr>
+ <tr height=46 style='mso-height-source:userset;height:34.5pt'>
+  <td height=46 class=xl7711743 width=64 style='height:34.5pt;border-top:none;
+  width:48pt'>1.1.</td>
+  <td class=xl7511743 width=1001 style='border-left:none;width:751pt'>Respublika
+  daxilind&#601;: O c&uuml;ml&#601;d&#601;n kartl&#305; taksafonlardan</td>
+  <td class=xl7411743 width=103 style='border-top:none;border-left:none;
+  width:77pt'>0,07</td>
+  <td class=xl7411743 width=155 style='border-top:none;border-left:none;
+  width:116pt'>0,07</td>
+  <td class=xl6511743>&nbsp;</td>
+ </tr>
+ <tr height=46 style='mso-height-source:userset;height:34.5pt'>
+  <td height=46 class=xl7811743 width=64 style='height:34.5pt;width:48pt'>1.2.</td>
+  <td class=xl7611743 width=1001 style='border-top:none;border-left:none;
+  width:751pt'>Nax&ccedil;&#305;van MR daxilind&#601;</td>
+  <td class=xl8511743 width=103 style='border-left:none;width:77pt'>0,06</td>
+  <td class=xl7311743 width=155 style='width:116pt'>0,06</td>
+  <td class=xl6511743>&nbsp;</td>
+ </tr>
+ <tr height=61 style='mso-height-source:userset;height:45.75pt'>
+  <td height=61 class=xl7711743 width=64 style='height:45.75pt;border-top:none;
+  width:48pt'>1.3.</td>
+  <td class=xl7511743 width=1001 style='border-top:none;border-left:none;
+  width:751pt'>&#350;&#601;h&#601;rl&#601;raras&#305; telefon stansiyas&#305;na
+  qo&#351;ulmu&#351; birba&#351;a telefona g&ouml;r&#601; illik abun&#601;
+  haqq&#305;</td>
+  <td class=xl8211743 width=103 style='border-left:none;width:77pt'>&nbsp;</td>
+  <td class=xl8411743 width=155 style='width:116pt'>180</td>
+  <td class=xl6511743>&nbsp;</td>
+ </tr>
+ <tr height=62 style='mso-height-source:userset;height:46.5pt'>
+  <td height=62 class=xl7711743 width=64 style='height:46.5pt;border-top:none;
+  width:48pt'>2</td>
+  <td class=xl7611743 width=1001 style='border-top:none;border-left:none;
+  width:751pt'>Qrup &#351;&#601;h&#601;rl&#601;raras&#305; telefon
+  rabit&#601;si (Q&#350;TR) Q&#350;TR sistemi &uuml;zr&#601;
+  m&uuml;&#351;avir&#601;nin ke&ccedil;irilm&#601;si</td>
+  <td class=xl8311743 width=103 style='width:77pt'>&nbsp;</td>
+  <td class=xl7211743 width=155 style='border-top:none;width:116pt'>&nbsp;</td>
+  <td class=xl6511743>&nbsp;</td>
+ </tr>
+ <tr height=57 style='mso-height-source:userset;height:42.75pt'>
+  <td height=57 class=xl8011743 width=64 style='height:42.75pt;border-top:none;
+  width:48pt'>2,1</td>
+  <td class=xl8111743 width=1001 style='border-top:none;border-left:none;
+  width:751pt'>M&uuml;&#351;avir&#601;d&#601; i&#351;tirak ed&#601;n
+  (&ccedil;&#305;x&#305;&#351; &uuml;&ccedil;&uuml;n qo&#351;ulub v&#601; ya
+  qo&#351;ulmamas&#305;ndan as&#305;l&#305; olmayaraq) h&#601;r
+  m&#601;nt&#601;q&#601; &uuml;&ccedil;&uuml;n tam v&#601; natamam saata
+  g&ouml;r&#601;</td>
+  <td class=xl8211743 width=103 style='border-left:none;width:77pt'>&nbsp;</td>
+  <td class=xl7411743 width=155 style='border-top:none;border-left:none;
+  width:116pt'>4,4</td>
+  <td class=xl6511743>&nbsp;</td>
+ </tr>
+ <tr height=79 style='mso-height-source:userset;height:59.25pt'>
+  <td colspan=4 height=79 class=xl9011743 width=1323 style='border-right:1.5pt solid white;
+  height:59.25pt;width:992pt'>&#399;lav&#601; xidm&#601;tl&#601;r</td>
+  <td class=xl6511743>&nbsp;</td>
+ </tr>
+ <tr height=61 style='mso-height-source:userset;height:45.75pt'>
+  <td height=61 class=xl8611743 width=64 style='height:45.75pt;width:48pt'>3</td>
+  <td colspan=3 class=xl9311743 width=1259 style='border-right:1.5pt solid white;
+  width:944pt'>A&#351;a&#287;&#305;dak&#305; hallarda
+  abun&#601;&ccedil;il&#601;rd&#601;n dan&#305;&#351;&#305;q haqq&#305;ndan
+  &#601;lav&#601; &#351;&#601;h&#601;rl&#601;raras&#305; dan&#305;&#351;&#305;q
+  tarifi m&#601;bl&#601;&#287;ind&#601; bir d&#601;qiq&#601; dan&#305;&#351;&#305;q
+  haqq&#305; tutulur:</td>
+  <td class=xl6511743>&nbsp;</td>
+ </tr>
+ <tr height=49 style='mso-height-source:userset;height:36.75pt'>
+  <td height=49 class=xl8911743 width=64 style='height:36.75pt;border-top:none;
+  width:48pt'>3.1.</td>
+  <td colspan=3 class=xl10111743 width=1259 style='border-right:1.5pt solid white;
+  border-left:none;width:944pt'>&Ccedil;a&#287;&#305;ran abun&#601;&ccedil;inin
+  xahi&#351;i il&#601; &ccedil;a&#287;&#305;r&#305;lan &#351;&#601;xs&#601;
+  bildiri&#351; veril&#601;rk&#601;n</td>
+  <td class=xl6511743>&nbsp;</td>
+ </tr>
+ <tr height=42 style='mso-height-source:userset;height:31.5pt'>
+  <td height=42 class=xl8811743 width=64 style='height:31.5pt;width:48pt'>3.2.</td>
+  <td colspan=3 class=xl10411743 width=1259 style='border-right:1.5pt solid white;
+  border-left:none;width:944pt'>M&uuml;&#601;yy&#601;n &#351;&#601;xsin
+  telefona &ccedil;a&#287;&#305;r&#305;lmas&#305;</td>
+  <td class=xl6511743>&nbsp;</td>
+ </tr>
+ <tr height=48 style='mso-height-source:userset;height:36.0pt'>
+  <td height=48 class=xl8811743 width=64 style='height:36.0pt;border-top:none;
+  width:48pt'>3.3.</td>
+  <td colspan=3 class=xl10111743 width=1259 style='border-right:1.5pt solid white;
+  border-left:none;width:944pt'>Tap&#351;&#305;r&#305;ql&#305;
+  dan&#305;&#351;&#305;&#287;&#305;n ba&#351;qa telefon
+  n&ouml;mr&#601;sin&#601; v&#601; ya ba&#351;qa dan&#305;&#351;&#305;q
+  m&#601;nt&#601;q&#601;sin&#601; d&#601;yi&#351;ilm&#601;si</td>
+  <td class=xl6511743>&nbsp;</td>
+ </tr>
+ <tr height=48 style='mso-height-source:userset;height:36.0pt'>
+  <td height=48 class=xl8711743 width=64 style='height:36.0pt;width:48pt'>3.4.</td>
+  <td colspan=3 class=xl9811743 width=1259 style='border-right:1.5pt solid white;
+  border-left:none;width:944pt'>Ba&#351;qa &#351;&#601;h&#601;rd&#601; telefon
+  n&ouml;mr&#601;si haqda aray&#305;&#351;</td>
+  <td class=xl6511743>&nbsp;</td>
+ </tr>
+ <tr height=55 style='mso-height-source:userset;height:41.25pt'>
+  <td height=55 class=xl8811743 width=64 style='height:41.25pt;border-top:none;
+  width:48pt'>4</td>
+  <td class=xl9711743 width=1001 style='border-top:none;border-left:none;
+  width:751pt'>&#350;&#601;h&#601;rl&#601;raras&#305; v&#601; beyn&#601;lxalq
+  dan&#305;&#351;&#305;qlara g&ouml;r&#601; a&ccedil;&#305;qlamalar&#305;n
+  verilm&#601;si</td>
+  <td class=xl10811743 width=103 style='border-top:none;width:77pt'>0,1</td>
+  <td class=xl10911743 width=155 style='border-top:none;border-left:none;
+  width:116pt'>0,1</td>
+  <td class=xl6511743>&nbsp;</td>
+ </tr>
+ <tr height=83 style='mso-height-source:userset;height:62.25pt'>
+  <td height=83 class=xl8811743 width=64 style='height:62.25pt;border-top:none;
+  width:48pt'>5</td>
+  <td class=xl9611743 width=1001 style='border-top:none;border-left:none;
+  width:751pt'>M&#601;nzil telefonlar&#305;ndan v&#601; mehmanxanada
+  ya&#351;ayan v&#601;t&#601;nda&#351;lar t&#601;r&#601;find&#601;n
+  kreditl&#601; apar&#305;lan dan&#305;&#351;&#305;qlara g&ouml;r&#601;
+  h&#601;r hans&#305; dan&#305;&#351;&#305;q &uuml;&ccedil;&uuml;n
+  &#601;lav&#601;</td>
+  <td class=xl10711743 width=103 style='width:77pt'>0,024</td>
+  <td class=xl7211743 width=155 style='border-top:none;border-left:none;
+  width:116pt'>&nbsp;</td>
+  <td class=xl6511743>&nbsp;</td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl6511743 style='height:15.75pt'>&nbsp;</td>
+  <td class=xl6511743>&nbsp;</td>
+  <td class=xl6511743>&nbsp;</td>
+  <td class=xl6511743>&nbsp;</td>
+  <td class=xl6511743>&nbsp;</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=64 style='width:48pt'></td>
+  <td width=1001 style='width:751pt'></td>
+  <td width=103 style='width:77pt'></td>
+  <td width=155 style='width:116pt'></td>
+  <td width=64 style='width:48pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</div>
+
+<h3>Şəhər və kənd telefon rabitəsi xidmətləri üçün tariflər</h3>
+<div>
+<table border=0 cellpadding=0 cellspacing=0 width=593 style='border-collapse:
+ collapse;table-layout:fixed;width:445pt'>
+ <col width=99 style='mso-width-source:userset;mso-width-alt:3620;width:74pt'>
+ <col width=110 style='mso-width-source:userset;mso-width-alt:4022;width:83pt'>
+ <col width=64 span=6 style='width:48pt'>
+ <tr height=55 style='mso-height-source:userset;height:41.25pt'>
+  <td rowspan=4 height=150 class=xl7820292 width=99 style='border-bottom:1.5pt solid black;
+  height:112.5pt;width:74pt'>Madd&#601; v&#601; b&#601;ndl&#601;rin &nbsp;¹-si</td>
+  <td rowspan=4 class=xl7820292 width=110 style='border-bottom:1.5pt solid black;
+  width:83pt'>Xidm&#601;tl&#601;rin ad&#305;</td>
+  <td colspan=6 rowspan=3 class=xl7120292 width=384 style='border-right:1.5pt solid black;
+  border-bottom:1.5pt solid black;width:288pt'>Tarifl&#601;r (&#399;DV daxil
+  olmaqla), manat</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+ </tr>
+ <tr height=25 style='mso-height-source:userset;height:18.75pt'>
+ </tr>
+ <tr height=50 style='mso-height-source:userset;height:37.5pt'>
+  <td colspan=2 height=50 class=xl8120292 width=128 style='border-right:1.5pt solid black;
+  height:37.5pt;border-left:none;width:96pt'>&#399;hali &uuml;&ccedil;&uuml;n</td>
+  <td colspan=2 class=xl8120292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>B&uuml;dc&#601; t&#601;&#351;kilatlar&#305;</td>
+  <td colspan=2 class=xl8120292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>Dig&#601;r abun&#601;&ccedil;il&#601;r</td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td rowspan=5 height=102 class=xl9120292 width=99 style='border-bottom:1.5pt solid black;
+  height:76.5pt;border-top:none;width:74pt'>1</td>
+  <td colspan=7 rowspan=5 class=xl8320292 width=494 style='border-right:1.5pt solid black;
+  border-bottom:1.5pt solid black;width:371pt'>Telefon
+  &ccedil;&#601;kili&#351;i:</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+ </tr>
+ <tr height=60 style='mso-height-source:userset;height:45.0pt'>
+  <td rowspan=3 height=101 class=xl9420292 width=99 style='border-bottom:1.5pt solid black;
+  height:75.75pt;border-top:none;width:74pt'>1.1.</td>
+  <td rowspan=3 class=xl9420292 width=110 style='border-bottom:1.5pt solid black;
+  border-top:none;width:83pt'>&#350;&#601;h&#601;r yerl&#601;rind&#601;:
+  Elektron ATS-l&#601;r</td>
+  <td colspan=2 rowspan=3 class=xl14820292 width=128 style='border-right:1.5pt solid black;
+  border-bottom:1.5pt solid black;width:96pt'>80</td>
+  <td colspan=2 rowspan=3 class=xl14820292 width=128 style='border-right:1.5pt solid black;
+  border-bottom:1.5pt solid black;width:96pt'>80</td>
+  <td colspan=2 rowspan=3 class=xl14820292 width=128 style='border-right:1.5pt solid black;
+  border-bottom:1.5pt solid black;width:96pt'>120</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+ </tr>
+ <tr height=44 style='mso-height-source:userset;height:33.0pt'>
+  <td rowspan=3 height=85 class=xl9420292 width=99 style='border-bottom:1.5pt solid black;
+  height:63.75pt;border-top:none;width:74pt'>1.2.</td>
+  <td rowspan=3 class=xl9420292 width=110 style='border-bottom:1.5pt solid black;
+  border-top:none;width:83pt'>K&#601;nd yerl&#601;rind&#601;:<span
+  style='mso-spacerun:yes'>   </span>Elektron ATS-l&#601;r</td>
+  <td colspan=2 rowspan=3 class=xl14820292 width=128 style='border-right:1.5pt solid black;
+  border-bottom:1.5pt solid black;width:96pt'>40</td>
+  <td colspan=2 rowspan=3 class=xl14820292 width=128 style='border-right:1.5pt solid black;
+  border-bottom:1.5pt solid black;width:96pt'>40</td>
+  <td colspan=2 rowspan=3 class=xl14820292 width=128 style='border-right:1.5pt solid black;
+  border-bottom:1.5pt solid black;width:96pt'>60</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td rowspan=7 height=141 class=xl9720292 width=99 style='border-bottom:1.5pt solid black;
+  height:105.75pt;border-top:none;width:74pt'>4</td>
+  <td colspan=7 rowspan=7 class=xl10020292 width=494 style='border-right:1.5pt solid black;
+  border-bottom:1.5pt solid black;width:371pt'>Telefonla&#351;d&#305;r&#305;lm&#305;&#351;
+  obyektd&#601; olan h&#601;r bir telefonun ada
+  ke&ccedil;irilm&#601;si&nbsp;(telefonun t&#601;hvil verilm&#601;si
+  bar&#601;d&#601; aray&#305;&#351; t&#601;qdim etdikd&#601;)</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl10620292 width=99 style='height:17.25pt;border-top:
+  none;width:74pt'>4.1.</td>
+  <td class=xl10620292 width=110 style='border-top:none;border-left:none;
+  width:83pt'>&#350;&#601;h&#601;r yerl&#601;rind&#601;</td>
+  <td colspan=2 class=xl15420292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>2</td>
+  <td colspan=2 class=xl15420292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>20</td>
+  <td colspan=2 class=xl15420292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>50</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl11420292 width=99 style='height:17.25pt;border-top:
+  none;width:74pt'>4.2.</td>
+  <td class=xl11420292 width=110 style='border-top:none;width:83pt'>K&#601;nd
+  yerl&#601;rind&#601;</td>
+  <td colspan=2 class=xl15420292 width=128 style='border-right:1.5pt solid black;
+  width:96pt'>1</td>
+  <td colspan=2 class=xl15420292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>10</td>
+  <td colspan=2 class=xl15420292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>20</td>
+ </tr>
+ <tr height=82 style='height:61.5pt'>
+  <td height=82 class=xl11520292 width=99 style='height:61.5pt;width:74pt'>4.3.</td>
+  <td class=xl10620292 width=110 style='width:83pt'>Telefonun ail&#601;
+  &uuml;zv&uuml;n&uuml;n birinin &nbsp;ad&#305;na ke&ccedil;irilm&#601;si</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>0,8</td>
+  <td colspan=2 class=xl11020292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>&nbsp;</td>
+  <td colspan=2 class=xl11020292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>&nbsp;</td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td rowspan=7 height=142 class=xl12120292 width=99 style='border-bottom:1.5pt solid black;
+  height:106.5pt;border-top:none;width:74pt'>5</td>
+  <td colspan=7 rowspan=7 class=xl14120292 width=494 style='border-right:1.5pt solid black;
+  border-bottom:1.5pt solid black;width:371pt'>Telefonla&#351;d&#305;r&#305;lm&#305;&#351;
+  obyektd&#601; olan h&#601;r bir telefonun ada) ke&ccedil;irilm&#601;si
+  &nbsp;(telefonun t&#601;hvil verilm&#601;si bar&#601;d&#601; aray&#305;&#351;
+  t&#601;qdim etm&#601;dikd&#601;)</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+ </tr>
+ <tr height=41 style='height:30.75pt'>
+  <td rowspan=3 height=82 class=xl10920292 width=99 style='border-bottom:1.5pt solid black;
+  height:61.5pt;border-top:none;width:74pt'>5.1.</td>
+  <td class=xl10920292 width=110 style='border-top:none;border-left:none;
+  width:83pt'>&#350;&#601;h&#601;r yerl&#601;rind&#601;:</td>
+  <td colspan=2 rowspan=3 class=xl15820292 width=128 style='border-right:1.5pt solid black;
+  border-bottom:1.5pt solid black;width:96pt'>60</td>
+  <td colspan=2 rowspan=3 class=xl15820292 width=128 style='border-right:1.5pt solid black;
+  border-bottom:1.5pt solid black;width:96pt'>80</td>
+  <td colspan=2 rowspan=3 class=xl15820292 width=128 style='border-right:1.5pt solid black;
+  border-bottom:1.5pt solid black;width:96pt'>120</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl12620292 width=110 style='height:15.0pt;border-left:
+  none;width:83pt'>&nbsp;</td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl12420292 width=110 style='height:15.75pt;border-left:
+  none;width:83pt'>-s&#601;rb&#601;st n&ouml;mr&#601;</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.25pt'>
+  <td rowspan=5 height=115 class=xl10920292 width=99 style='border-bottom:1.5pt solid black;
+  height:86.25pt;border-top:none;width:74pt'>5.2.</td>
+  <td class=xl10920292 width=110 style='border-left:none;width:83pt'>K&#601;nd
+  yerl&#601;rind&#601;:</td>
+  <td colspan=2 rowspan=5 class=xl15820292 width=128 style='border-right:1.5pt solid black;
+  border-bottom:1.5pt solid black;width:96pt'>&nbsp;30,00</td>
+  <td colspan=2 rowspan=5 class=xl15820292 width=128 style='border-right:1.5pt solid black;
+  border-bottom:1.5pt solid black;width:96pt'>&nbsp;40,00</td>
+  <td colspan=2 rowspan=5 class=xl15820292 width=128 style='border-right:1.5pt solid black;
+  border-bottom:1.5pt solid black;width:96pt'>60</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.25pt'>
+  <td height=23 class=xl12720292 width=110 style='height:17.25pt;border-left:
+  none;width:83pt'>&nbsp;</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.25pt'>
+  <td rowspan=3 height=69 class=xl10920292 width=110 style='border-bottom:1.5pt solid black;
+  height:51.75pt;border-top:none;width:83pt'>-s&#601;rb&#601;st n&ouml;mr&#601;</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.25pt'>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.25pt'>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td rowspan=5 height=121 class=xl9720292 width=99 style='border-bottom:1.5pt solid black;
+  height:90.75pt;border-top:none;width:74pt'>6</td>
+  <td colspan=7 rowspan=5 class=xl10020292 width=494 style='border-right:1.5pt solid black;
+  border-bottom:1.5pt solid black;width:371pt'>Telefonu t&#601;hvil verib
+  telefonu olmayan obyekt&#601; k&ouml;&ccedil;d&uuml;kd&#601; telefon
+  &ccedil;&#601;kili&#351;i</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+ </tr>
+ <tr height=61 style='mso-height-source:userset;height:45.75pt'>
+  <td rowspan=5 height=142 class=xl10920292 width=99 style='border-bottom:1.5pt solid black;
+  height:106.5pt;border-top:none;width:74pt'>6.1.</td>
+  <td rowspan=5 class=xl10920292 width=110 style='border-bottom:1.5pt solid black;
+  border-top:none;width:83pt'>&#350;&#601;h&#601;r yerl&#601;rind&#601;:
+  -s&#601;rb&#601;st n&ouml;mr&#601;</td>
+  <td colspan=2 rowspan=5 class=xl15820292 width=128 style='border-right:1.5pt solid black;
+  border-bottom:1.5pt solid black;width:96pt'>&nbsp;30,00</td>
+  <td colspan=2 rowspan=5 class=xl15820292 width=128 style='border-right:1.5pt solid black;
+  border-bottom:1.5pt solid black;width:96pt'>40</td>
+  <td colspan=2 rowspan=5 class=xl15820292 width=128 style='border-right:1.5pt solid black;
+  border-bottom:1.5pt solid black;width:96pt'>60</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+ </tr>
+ <tr height=41 style='mso-height-source:userset;height:30.75pt'>
+  <td rowspan=5 height=122 class=xl10920292 width=99 style='border-bottom:1.5pt solid black;
+  height:91.5pt;border-top:none;width:74pt'>6.2.</td>
+  <td rowspan=5 class=xl10920292 width=110 style='border-bottom:1.5pt solid black;
+  border-top:none;width:83pt'>K&#601;nd yerl&#601;rind&#601;:<span
+  style='mso-spacerun:yes'>  </span>-s&#601;rb&#601;st n&ouml;mr&#601;</td>
+  <td colspan=2 rowspan=5 class=xl15820292 width=128 style='border-right:1.5pt solid black;
+  border-bottom:1.5pt solid black;width:96pt'>15</td>
+  <td colspan=2 rowspan=5 class=xl15820292 width=128 style='border-right:1.5pt solid black;
+  border-bottom:1.5pt solid black;width:96pt'>20</td>
+  <td colspan=2 rowspan=5 class=xl15820292 width=128 style='border-right:1.5pt solid black;
+  border-bottom:1.5pt solid black;width:96pt'>30</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+ </tr>
+ <tr height=15 style='mso-height-source:userset;height:11.25pt'>
+  <td rowspan=5 height=72 class=xl20520292 width=99 style='border-bottom:1.5pt solid black;
+  height:54.0pt;border-top:none;width:74pt'>7</td>
+  <td colspan=7 rowspan=5 class=xl20620292 width=494 style='border-right:1.5pt solid black;
+  border-bottom:1.5pt solid black;width:371pt'>Ayr&#305;-ayr&#305;
+  m&#601;nzill&#601;r&#601;, idar&#601; v&#601; ofisl&#601;r&#601; paralel
+  telefonun &ccedil;&#601;kili&#351;i</td>
+ </tr>
+ <tr height=12 style='mso-height-source:userset;height:9.0pt'>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+ </tr>
+ <tr height=9 style='mso-height-source:userset;height:6.75pt'>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl13020292 width=99 style='height:18.75pt;border-top:
+  none;width:74pt'>7.1.</td>
+  <td class=xl10620292 width=110 style='border-top:none;border-left:none;
+  width:83pt'>&#350;&#601;h&#601;r yerl&#601;rind&#601;</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>30</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>40</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>60</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl10620292 width=99 style='height:18.75pt;border-top:
+  none;width:74pt'>7.2.</td>
+  <td class=xl10620292 width=110 style='border-top:none;border-left:none;
+  width:83pt'>K&#601;nd yerl&#601;rind&#601;</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>15</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>20</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>30</td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td rowspan=3 height=60 class=xl17020292 width=99 style='border-bottom:1.5pt solid black;
+  height:45.0pt;border-top:none;width:74pt'>8</td>
+  <td colspan=7 rowspan=3 class=xl14120292 width=494 style='border-right:1.5pt solid black;
+  border-bottom:1.5pt solid black;width:371pt'>Ayr&#305;-ayr&#305;
+  m&#601;nzill&#601;r&#601;, idar&#601; v&#601; ofisl&#601;r&#601;
+  &ccedil;&#601;kilmi&#351; paralel<span style='mso-spacerun:yes'> 
+  </span>telefonun &#601;v&#601;zin&#601; abun&#601;&ccedil;il&#601;r&#601;
+  f&#601;rdi telefonun verilm&#601;si</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl13120292 width=99 style='height:18.75pt;border-top:
+  none;width:74pt'>8,1</td>
+  <td class=xl6520292 width=110 style='width:83pt'>&#350;&#601;h&#601;r
+  yerl&#601;rind&#601;</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  width:96pt'>30</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>40</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>60</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl10620292 width=99 style='height:18.75pt;width:74pt'>8.2.</td>
+  <td class=xl11320292 width=110 style='width:83pt'>K&#601;nd
+  yerl&#601;rind&#601;</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>15</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>20</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>30</td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td rowspan=5 height=102 class=xl17320292 width=99 style='border-bottom:1.5pt solid black;
+  height:76.5pt;border-top:none;width:74pt'>9</td>
+  <td colspan=7 rowspan=5 class=xl17420292 width=494 style='border-right:1.5pt solid black;
+  border-bottom:1.5pt solid black;width:371pt'>Sabit &#351;&#601;b&#601;k&#601;
+  telefonlar&#305;ndan istifad&#601;y&#601; g&ouml;r&#601; ayl&#305;q
+  abun&#601;1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+ </tr>
+ <tr height=14 style='mso-height-source:userset;height:10.5pt'>
+  <td rowspan=5 height=70 class=xl10920292 width=99 style='border-bottom:1.5pt solid black;
+  height:52.5pt;border-top:none;width:74pt'>9.1.</td>
+  <td rowspan=5 class=xl10920292 width=110 style='border-bottom:1.5pt solid black;
+  border-top:none;width:83pt'>&#350;&#601;h&#601;r v&#601; k&#601;nd
+  yerl&#601;rind&#601;:</td>
+  <td colspan=2 rowspan=5 class=xl15820292 width=128 style='border-right:1.5pt solid black;
+  border-bottom:1.5pt solid black;width:96pt'>2</td>
+  <td colspan=2 rowspan=5 class=xl15820292 width=128 style='border-right:1.5pt solid black;
+  border-bottom:1.5pt solid black;width:96pt'>3</td>
+  <td colspan=2 rowspan=5 class=xl15820292 width=128 style='border-right:1.5pt solid black;
+  border-bottom:1.5pt solid black;width:96pt'>7</td>
+ </tr>
+ <tr height=14 style='mso-height-source:userset;height:10.5pt'>
+ </tr>
+ <tr height=14 style='mso-height-source:userset;height:10.5pt'>
+ </tr>
+ <tr height=14 style='mso-height-source:userset;height:10.5pt'>
+ </tr>
+ <tr height=14 style='mso-height-source:userset;height:10.5pt'>
+ </tr>
+ <tr height=162 style='height:121.5pt'>
+  <td height=162 class=xl10620292 width=99 style='height:121.5pt;border-top:
+  none;width:74pt'>9.2.</td>
+  <td class=xl10620292 width=110 style='border-top:none;border-left:none;
+  width:83pt'>&#399;sas telefon aparat&#305;na &#601;lav&#601; 2-d&#601;n
+  art&#305;q paralel qo&#351;ulmu&#351; h&#601;r bir telefon aparat&#305;ndan
+  istifad&#601;y&#601; g&ouml;r&#601; ayl&#305;q abun&#601;</td>
+  <td colspan=2 class=xl16420292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>&nbsp;</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>0,4</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>0,4</td>
+ </tr>
+ <tr height=38 style='mso-height-source:userset;height:28.5pt'>
+  <td height=38 class=xl18520292 width=99 style='height:28.5pt;border-top:none;
+  width:74pt'>11</td>
+  <td colspan=7 class=xl18620292 width=494 style='border-right:1.5pt solid black;
+  width:371pt'>Telefon &#351;&#601;b&#601;k&#601;sin&#601;
+  &ccedil;&#305;x&#305;&#351; &uuml;&ccedil;&uuml;n birl&#601;&#351;dirici
+  x&#601;ttin &ccedil;&#601;kili&#351;i:</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl13420292 width=99 style='height:18.75pt;border-top:
+  none;width:74pt'>11.1.</td>
+  <td class=xl10620292 width=110 style='border-top:none;width:83pt'>&#350;&#601;h&#601;r
+  yerl&#601;rind&#601;</td>
+  <td class=xl11120292 width=64 style='border-top:none;width:48pt'>&nbsp;</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>50</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>120</td>
+  <td class=xl11120292 width=64 style='border-top:none;width:48pt'>&nbsp;</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl11520292 width=99 style='height:18.75pt;border-top:
+  none;width:74pt'>11.2.</td>
+  <td class=xl10620292 width=110 style='border-top:none;width:83pt'>K&#601;nd
+  yerl&#601;rind&#601;</td>
+  <td class=xl11120292 width=64 style='border-top:none;width:48pt'>&nbsp;</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>25</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>60</td>
+  <td class=xl11120292 width=64 style='border-top:none;width:48pt'>&nbsp;</td>
+ </tr>
+ <tr height=59 style='mso-height-source:userset;height:44.25pt'>
+  <td height=59 class=xl18920292 width=99 style='height:44.25pt;border-top:
+  none;width:74pt'>12</td>
+  <td colspan=7 class=xl19020292 width=494 style='border-right:1.5pt solid black;
+  width:371pt'>Telefon &#351;&#601;b&#601;k&#601;sin&#601;
+  &ccedil;&#305;x&#305;&#351; &uuml;&ccedil;&uuml;n &ccedil;&#601;kilmi&#351;
+  birl&#601;&#351;dirici x&#601;ttin ayl&#305;q abun&#601;si:</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl13420292 width=99 style='height:18.75pt;border-top:
+  none;width:74pt'>12.1.</td>
+  <td class=xl10620292 width=110 style='border-top:none;width:83pt'>&#350;&#601;h&#601;r
+  yerl&#601;rind&#601;</td>
+  <td class=xl11120292 width=64 style='border-top:none;width:48pt'>&nbsp;</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>3</td>
+  <td colspan=2 class=xl16620292 width=128 style='border-right:1.5pt solid black;
+  width:96pt'>7</td>
+  <td class=xl11120292 width=64 style='border-top:none;width:48pt'>&nbsp;</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl6420292 width=99 style='height:18.75pt;width:74pt'>12.2.</td>
+  <td class=xl12520292 width=110 style='width:83pt'>K&#601;nd
+  yerl&#601;rind&#601;</td>
+  <td class=xl13620292 width=64 style='width:48pt'>&nbsp;</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>1,6</td>
+  <td colspan=2 class=xl16620292 width=128 style='border-right:1.5pt solid black;
+  width:96pt'>4</td>
+  <td class=xl13720292 width=64 style='width:48pt'>&nbsp;</td>
+ </tr>
+ <tr height=34 style='mso-height-source:userset;height:25.5pt'>
+  <td height=34 class=xl19320292 width=99 style='height:25.5pt;width:74pt'>13</td>
+  <td colspan=7 class=xl19420292 width=494 style='border-right:1.5pt solid black;
+  border-left:none;width:371pt'>&#304;ki son m&#601;nt&#601;q&#601;
+  aras&#305;nda birba&#351;a rabit&#601; x&#601;ttinin
+  &ccedil;&#601;kili&#351;i:</td>
+ </tr>
+ <tr height=42 style='height:31.5pt'>
+  <td height=42 class=xl6320292 width=99 style='height:31.5pt;width:74pt'>&nbsp;</td>
+  <td class=xl13920292 width=110 style='width:83pt'>&#304;kinaqilli sistem
+  &uuml;zr&#601;:</td>
+  <td class=xl13220292 width=64 style='border-top:none;width:48pt'>&nbsp;</td>
+  <td colspan=2 class=xl11020292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>&nbsp;</td>
+  <td colspan=2 class=xl11220292 width=128 style='border-right:1.5pt solid black;
+  width:96pt'>&nbsp;</td>
+  <td class=xl13620292 width=64 style='width:48pt'>&nbsp;</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl13020292 width=99 style='height:18.75pt;width:74pt'>13.1.</td>
+  <td class=xl13920292 width=110 style='border-left:none;width:83pt'>&#350;&#601;h&#601;r
+  yerl&#601;rind&#601;</td>
+  <td class=xl12820292 width=64 style='width:48pt'>&nbsp;</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>120</td>
+  <td colspan=2 class=xl16620292 width=128 style='border-right:1.5pt solid black;
+  width:96pt'>120</td>
+  <td class=xl13620292 width=64 style='width:48pt'>&nbsp;</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl13520292 width=99 style='height:18.75pt;width:74pt'>13.2.</td>
+  <td class=xl13920292 width=110 style='width:83pt'>K&#601;nd
+  yerl&#601;rind&#601;</td>
+  <td class=xl12820292 width=64 style='width:48pt'>&nbsp;</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>60</td>
+  <td colspan=2 class=xl16620292 width=128 style='border-right:1.5pt solid black;
+  width:96pt'>60</td>
+  <td class=xl11120292 width=64 style='border-top:none;width:48pt'>&nbsp;</td>
+ </tr>
+ <tr height=42 style='height:31.5pt'>
+  <td height=42 class=xl14420292 width=99 style='height:31.5pt;border-top:none;
+  width:74pt'>&nbsp;</td>
+  <td class=xl11520292 width=110 style='border-top:none;width:83pt'>&Uuml;&ccedil;naqilli
+  sistem &uuml;zr&#601;:</td>
+  <td class=xl12820292 width=64 style='width:48pt'>&nbsp;</td>
+  <td colspan=2 class=xl11020292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>&nbsp;</td>
+  <td colspan=2 class=xl11220292 width=128 style='border-right:1.5pt solid black;
+  width:96pt'>&nbsp;</td>
+  <td class=xl13620292 width=64 style='width:48pt'>&nbsp;</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl13020292 width=99 style='height:18.75pt;border-top:
+  none;width:74pt'>13.3.</td>
+  <td class=xl14020292 width=110 style='border-top:none;width:83pt'>&#350;&#601;h&#601;r
+  yerl&#601;rind&#601;</td>
+  <td class=xl13220292 width=64 style='border-top:none;width:48pt'>&nbsp;</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>180</td>
+  <td colspan=2 class=xl16620292 width=128 style='border-right:1.5pt solid black;
+  width:96pt'>180</td>
+  <td class=xl13220292 width=64 style='border-top:none;border-left:none;
+  width:48pt'>&nbsp;</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl14520292 width=99 style='height:18.75pt;width:74pt'>13.4.</td>
+  <td class=xl6520292 width=110 style='width:83pt'>K&#601;nd
+  yerl&#601;rind&#601;</td>
+  <td class=xl12920292 width=64 style='width:48pt'>&nbsp;</td>
+  <td colspan=2 class=xl16920292 width=128 style='width:96pt'>80</td>
+  <td colspan=2 class=xl16020292 width=128 style='border-right:1.5pt solid black;
+  width:96pt'>80</td>
+  <td class=xl13720292 width=64 style='width:48pt'>&nbsp;</td>
+ </tr>
+ <tr height=42 style='height:31.5pt'>
+  <td height=42 class=xl13220292 width=99 style='height:31.5pt;width:74pt'>&nbsp;</td>
+  <td class=xl14020292 width=110 style='width:83pt'>D&ouml;rdnaqilli sistem
+  &uuml;zr&#601;:</td>
+  <td class=xl13220292 width=64 style='width:48pt'>&nbsp;</td>
+  <td colspan=2 class=xl16820292 width=128 style='width:96pt'>&nbsp;</td>
+  <td colspan=2 class=xl16420292 width=128 style='border-right:1.5pt solid black;
+  width:96pt'>&nbsp;</td>
+  <td class=xl13220292 width=64 style='border-left:none;width:48pt'>&nbsp;</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl10620292 width=99 style='height:18.75pt;border-top:
+  none;width:74pt'>13.5.</td>
+  <td class=xl14020292 width=110 style='border-top:none;width:83pt'>&#350;&#601;h&#601;r
+  yerl&#601;rind&#601;</td>
+  <td class=xl13220292 width=64 style='border-top:none;width:48pt'>&nbsp;</td>
+  <td colspan=2 class=xl16620292 width=128 style='width:96pt'>220</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  width:96pt'>220</td>
+  <td class=xl13220292 width=64 style='border-top:none;border-left:none;
+  width:48pt'>&nbsp;</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl10620292 width=99 style='height:18.75pt;border-top:
+  none;width:74pt'>13.6.</td>
+  <td class=xl14020292 width=110 style='border-top:none;width:83pt'>K&#601;nd
+  yerl&#601;rind&#601;</td>
+  <td class=xl13220292 width=64 style='border-top:none;width:48pt'>&nbsp;</td>
+  <td colspan=2 class=xl16620292 width=128 style='width:96pt'>100</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  width:96pt'>100</td>
+  <td class=xl13220292 width=64 style='border-top:none;border-left:none;
+  width:48pt'>&nbsp;</td>
+ </tr>
+ <tr height=54 style='mso-height-source:userset;height:40.5pt'>
+  <td height=54 class=xl19720292 width=99 style='height:40.5pt;border-top:none;
+  width:74pt'>14</td>
+  <td colspan=7 class=xl19820292 width=494 style='border-right:1.5pt solid black;
+  border-left:none;width:371pt'>&#304;ki son m&#601;nt&#601;q&#601;
+  aras&#305;nda birba&#351;a rabit&#601; x&#601;ttind&#601;n
+  istifad&#601;y&#601; g&ouml;r&#601; ayl&#305;q abun&#601;2</td>
+ </tr>
+ <tr height=42 style='height:31.5pt'>
+  <td height=42 class=xl13220292 width=99 style='height:31.5pt;border-top:none;
+  width:74pt'>&nbsp;</td>
+  <td class=xl10620292 width=110 style='border-top:none;border-left:none;
+  width:83pt'>&#304;kinaqilli sistem &uuml;zr&#601;:</td>
+  <td class=xl13220292 width=64 style='border-top:none;border-left:none;
+  width:48pt'>&nbsp;</td>
+  <td colspan=2 class=xl16420292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>&nbsp;</td>
+  <td colspan=2 class=xl16420292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>&nbsp;</td>
+  <td class=xl13220292 width=64 style='border-top:none;border-left:none;
+  width:48pt'>&nbsp;</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl10620292 width=99 style='height:18.75pt;border-top:
+  none;width:74pt'>14.1.</td>
+  <td class=xl10620292 width=110 style='border-top:none;border-left:none;
+  width:83pt'>&#350;&#601;h&#601;r yerl&#601;rind&#601;</td>
+  <td class=xl13220292 width=64 style='border-top:none;border-left:none;
+  width:48pt'>&nbsp;</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>3</td>
+  <td colspan=2 class=xl16620292 width=128 style='border-right:1.5pt solid black;
+  width:96pt'>7,2</td>
+  <td class=xl13220292 width=64 style='border-top:none;border-left:none;
+  width:48pt'>&nbsp;</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl10620292 width=99 style='height:18.75pt;border-top:
+  none;width:74pt'>14.2.</td>
+  <td class=xl10620292 width=110 style='border-top:none;border-left:none;
+  width:83pt'>K&#601;nd yerl&#601;rind&#601;</td>
+  <td class=xl13220292 width=64 style='border-top:none;border-left:none;
+  width:48pt'>&nbsp;</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>2,4</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>4,8</td>
+  <td class=xl14620292 width=64 style='border-top:none;border-left:none;
+  width:48pt'>&nbsp;</td>
+ </tr>
+ <tr height=42 style='height:31.5pt'>
+  <td height=42 class=xl13320292 width=99 style='height:31.5pt;border-top:none;
+  width:74pt'>&nbsp;</td>
+  <td class=xl11320292 width=110 style='border-top:none;width:83pt'>&Uuml;&ccedil;naqilli
+  sistem &uuml;zr&#601;:</td>
+  <td class=xl11120292 width=64 style='border-top:none;width:48pt'>&nbsp;</td>
+  <td colspan=2 class=xl16820292 width=128 style='border-right:1.5pt solid black;
+  width:96pt'>&nbsp;</td>
+  <td colspan=2 class=xl16420292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>&nbsp;</td>
+  <td class=xl13220292 width=64 style='border-left:none;width:48pt'>&nbsp;</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl14520292 width=99 style='height:18.75pt;width:74pt'>14.3.</td>
+  <td class=xl13820292 width=110 style='width:83pt'>&#350;&#601;h&#601;r
+  yerl&#601;rind&#601;</td>
+  <td class=xl13720292 width=64 style='width:48pt'>&nbsp;</td>
+  <td colspan=2 class=xl16920292 width=128 style='border-right:1.5pt solid black;
+  width:96pt'>4</td>
+  <td colspan=2 class=xl16020292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>10</td>
+  <td class=xl12920292 width=64 style='border-left:none;width:48pt'>&nbsp;</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl10620292 width=99 style='height:18.75pt;width:74pt'>14.4.</td>
+  <td class=xl11320292 width=110 style='width:83pt'>K&#601;nd
+  yerl&#601;rind&#601;</td>
+  <td class=xl11120292 width=64 style='width:48pt'>&nbsp;</td>
+  <td colspan=2 class=xl16620292 width=128 style='width:96pt'>3</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  width:96pt'>6,4</td>
+  <td class=xl13220292 width=64 style='border-left:none;width:48pt'>&nbsp;</td>
+ </tr>
+ <tr height=42 style='height:31.5pt'>
+  <td height=42 class=xl13220292 width=99 style='height:31.5pt;border-top:none;
+  width:74pt'>&nbsp;</td>
+  <td class=xl11320292 width=110 style='border-top:none;width:83pt'>D&ouml;rdnaqilli
+  sistem &uuml;zr&#601;:</td>
+  <td class=xl11120292 width=64 style='border-top:none;width:48pt'>&nbsp;</td>
+  <td colspan=2 class=xl16820292 width=128 style='width:96pt'>&nbsp;</td>
+  <td colspan=2 class=xl16420292 width=128 style='border-right:1.5pt solid black;
+  width:96pt'>&nbsp;</td>
+  <td class=xl13220292 width=64 style='border-top:none;border-left:none;
+  width:48pt'>&nbsp;</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl14520292 width=99 style='height:18.75pt;width:74pt'>14.5.</td>
+  <td class=xl13820292 width=110 style='width:83pt'>&#350;&#601;h&#601;r
+  yerl&#601;rind&#601;</td>
+  <td class=xl13620292 width=64 style='width:48pt'>&nbsp;</td>
+  <td colspan=2 class=xl16920292 width=128 style='border-right:1.5pt solid black;
+  width:96pt'>5</td>
+  <td colspan=2 class=xl16020292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>12</td>
+  <td class=xl12920292 width=64 style='border-left:none;width:48pt'>&nbsp;</td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl10620292 width=99 style='height:18.75pt;width:74pt'>14.6.</td>
+  <td class=xl11320292 width=110 style='width:83pt'>K&#601;nd
+  yerl&#601;rind&#601;</td>
+  <td class=xl11120292 width=64 style='border-top:none;width:48pt'>&nbsp;</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-left:none;width:96pt'>4</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  width:96pt'>8</td>
+  <td class=xl13220292 width=64 style='border-left:none;width:48pt'>&nbsp;</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl20120292 width=99 style='height:30.0pt;width:74pt'>15</td>
+  <td colspan=7 class=xl20220292 width=494 style='border-right:1.5pt solid black;
+  border-left:none;width:371pt'>Birl&#601;&#351;dirici x&#601;tt vasit&#601;si
+  il&#601; telefon &ccedil;&#601;kili&#351;i</td>
+ </tr>
+ <tr height=342 style='height:256.5pt'>
+  <td height=342 class=xl10620292 width=99 style='height:256.5pt;width:74pt'>15.1.</td>
+  <td class=xl10620292 width=110 style='border-top:none;border-left:none;
+  width:83pt'>Birl&#601;&#351;dirici x&#601;tt vasit&#601;si il&#601;
+  dig&#601;r ATS &#601;razisind&#601; i&#351;l&#601;y&#601;n n&ouml;mr&#601;nin
+  elektron ATS n&ouml;mr&#601;sin&#601; d&#601;yi&#351;dirilm&#601;si (Bu,
+  texnoloci d&#601;yi&#351;iklikl&#601;r n&#601;tic&#601;sind&#601; ba&#351;
+  verdikd&#601;, abun&#601;&ccedil;id&#601;n he&ccedil; bir haqq
+  al&#305;nm&#305;r v&#601; telefon yerli ATS n&ouml;mr&#601;sin&#601;
+  d&#601;yi&#351;dirilir):</td>
+  <td class=xl16720292 width=64 style='border-top:none;border-left:none;
+  width:48pt'>30</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-left:none;width:96pt'>30</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  width:96pt'>100</td>
+  <td class=xl13220292 width=64 style='border-top:none;border-left:none;
+  width:48pt'>&nbsp;</td>
+ </tr>
+ <tr height=122 style='height:91.5pt'>
+  <td height=122 class=xl10620292 width=99 style='height:91.5pt;border-top:
+  none;width:74pt'>15.2.</td>
+  <td class=xl10620292 width=110 style='border-top:none;border-left:none;
+  width:83pt'>Birl&#601;&#351;dirici x&#601;tt vasit&#601;si il&#601;
+  dig&#601;r ATS &#601;razisind&#601; i&#351;l&#601;y&#601;n telefonun
+  ayl&#305;q abun&#601;si</td>
+  <td class=xl16720292 width=64 style='border-top:none;border-left:none;
+  width:48pt'>6</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>3</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>12</td>
+  <td class=xl13220292 width=64 style='border-top:none;border-left:none;
+  width:48pt'>&nbsp;</td>
+ </tr>
+ <tr height=182 style='height:136.5pt'>
+  <td height=182 class=xl10620292 width=99 style='height:136.5pt;border-top:
+  none;width:74pt'>15.3.</td>
+  <td class=xl10620292 width=110 style='border-top:none;border-left:none;
+  width:83pt'>Bir ATS &#601;razisind&#601;n dig&#601;r ATS &#601;razisin&#601;
+  stansiya-lararas&#305; birl&#601;&#351;dirici x&#601;tt vasit&#601;si
+  il&#601;&nbsp;telefon &ccedil;&#601;kilm&#601;si</td>
+  <td class=xl16720292 width=64 style='border-top:none;border-left:none;
+  width:48pt'>90</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>110</td>
+  <td colspan=2 class=xl15620292 width=128 style='border-right:1.5pt solid black;
+  border-left:none;width:96pt'>200</td>
+  <td class=xl14720292 style='border-top:none;border-left:none'>&nbsp;</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=99 style='width:74pt'></td>
+  <td width=110 style='width:83pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</div>
+<h3>Beynəlxalq telefon danışıqlarnın 1 dəqiqəsi üçün tariflər</h3>
+<div>
+
+<table border=0 cellpadding=0 cellspacing=0 width=1681 style='border-collapse:
+ collapse;table-layout:fixed;width:1262pt'>
+ <col width=51 style='mso-width-source:userset;mso-width-alt:1865;width:38pt'>
+ <col width=141 style='mso-width-source:userset;mso-width-alt:5156;width:106pt'>
+ <col width=360 style='mso-width-source:userset;mso-width-alt:13165;width:270pt'>
+ <col width=319 style='mso-width-source:userset;mso-width-alt:11666;width:239pt'>
+ <col width=370 style='mso-width-source:userset;mso-width-alt:13531;width:278pt'>
+ <col width=202 style='mso-width-source:userset;mso-width-alt:7387;width:152pt'>
+ <col width=174 style='mso-width-source:userset;mso-width-alt:6363;width:131pt'>
+ <col width=64 style='width:48pt'>
+ <tr height=46 style='mso-height-source:userset;height:34.5pt'>
+  <td height=46 class=xl6315205 width=51 style='height:34.5pt;width:38pt'>&nbsp;</td>
+  <td class=xl6315205 width=141 style='width:106pt'>&nbsp;</td>
+  <td class=xl6315205 width=360 style='width:270pt'>&nbsp;</td>
+  <td class=xl6315205 width=319 style='width:239pt'>&nbsp;</td>
+  <td class=xl6315205 width=370 style='width:278pt'>&nbsp;</td>
+  <td class=xl6315205 width=202 style='width:152pt'>&nbsp;</td>
+  <td class=xl6315205 width=174 style='width:131pt'>&nbsp;</td>
+  <td class=xl6315205 width=64 style='width:48pt'>&nbsp;</td>
+ </tr>
+ <tr height=43 style='mso-height-source:userset;height:32.25pt'>
+  <td height=43 class=xl6315205 style='height:32.25pt'>&nbsp;</td>
+  <td rowspan=3 class=xl7615205 width=141 style='border-bottom:1.5pt solid white;
+  width:106pt'>¹</td>
+  <td rowspan=3 class=xl7615205 width=360 style='border-bottom:1.5pt solid white;
+  width:270pt'>Zonalar</td>
+  <td rowspan=3 class=xl7615205 width=319 style='border-bottom:1.5pt solid white;
+  width:239pt'>Tarif&nbsp;- 1
+  d&#601;qiq&#601;&nbsp;&nbsp;&nbsp;&uuml;&ccedil;&uuml;n
+  (&#399;DV&nbsp;daxil&nbsp;olmaqla),manat</td>
+  <td rowspan=3 class=xl7615205 width=370 style='border-bottom:1.5pt solid white;
+  width:278pt'>1d&#601;qiq&#601;d&#601;&nbsp;olan&nbsp;konturlar&#305;n&nbsp;say&#305;</td>
+  <td rowspan=3 class=xl7615205 width=202 style='border-bottom:1.5pt solid white;
+  width:152pt'>1&nbsp;konturun&nbsp;qiym&#601;ti, manat</td>
+  <td rowspan=3 class=xl7615205 width=174 style='border-bottom:1.5pt solid white;
+  width:131pt'>1 konturdak&#305;&nbsp;&nbsp;&nbsp;
+  saniy&#601;l&#601;rin&nbsp;say&#305;</td>
+  <td class=xl6315205>&nbsp;</td>
+ </tr>
+ <tr height=47 style='mso-height-source:userset;height:35.25pt'>
+  <td height=47 class=xl6315205 style='height:35.25pt'>&nbsp;</td>
+  <td class=xl6315205>&nbsp;</td>
+ </tr>
+ <tr height=48 style='mso-height-source:userset;height:36.0pt'>
+  <td height=48 class=xl6315205 style='height:36.0pt'>&nbsp;</td>
+  <td class=xl6315205>&nbsp;</td>
+ </tr>
+ <tr height=30 style='mso-height-source:userset;height:22.5pt'>
+  <td height=30 class=xl6315205 style='height:22.5pt'>&nbsp;</td>
+  <td class=xl7315205 width=141 style='border-top:none;width:106pt'>1</td>
+  <td class=xl7015205 width=360 style='border-top:none;width:270pt'>MDB v&#601;
+  Baltikyan&#305; &ouml;lk&#601;l&#601;r</td>
+  <td class=xl6515205 width=319 style='border-top:none;border-left:none;
+  width:239pt'>0,36</td>
+  <td class=xl6515205 width=370 style='border-top:none;border-left:none;
+  width:278pt'>60</td>
+  <td class=xl6815205 width=202 style='width:152pt'>0,006</td>
+  <td class=xl6515205 width=174 style='border-top:none;width:131pt'>1</td>
+  <td class=xl6315205>&nbsp;</td>
+ </tr>
+ <tr height=26 style='mso-height-source:userset;height:19.5pt'>
+  <td height=26 class=xl6315205 style='height:19.5pt'>&nbsp;</td>
+  <td class=xl7415205 width=141 style='border-top:none;width:106pt'>2</td>
+  <td class=xl7215205 width=360 style='border-left:none;width:270pt'>&#304;ran,T&uuml;rkiy&#601;,
+  Pakistan</td>
+  <td class=xl6915205 width=319 style='border-top:none;border-left:none;
+  width:239pt'>0,45</td>
+  <td class=xl6915205 width=370 style='border-top:none;border-left:none;
+  width:278pt'>60</td>
+  <td class=xl6915205 width=202 style='border-left:none;width:152pt'>0,0075</td>
+  <td class=xl6415205 width=174 style='border-left:none;width:131pt'>1</td>
+  <td class=xl6315205>&nbsp;</td>
+ </tr>
+ <tr height=26 style='mso-height-source:userset;height:19.5pt'>
+  <td height=26 class=xl6315205 style='height:19.5pt'>&nbsp;</td>
+  <td class=xl7515205 width=141 style='border-top:none;width:106pt'>3</td>
+  <td class=xl7115205 width=360 style='border-top:none;border-left:none;
+  width:270pt'>Avropa, Amerika v&#601; dig&#601;r &ouml;lk&#601;l&#601;r</td>
+  <td class=xl6715205 width=319 style='border-top:none;border-left:none;
+  width:239pt'>0,54</td>
+  <td class=xl6715205 width=370 style='border-top:none;border-left:none;
+  width:278pt'>60</td>
+  <td class=xl6715205 width=202 style='border-top:none;border-left:none;
+  width:152pt'>0,009</td>
+  <td class=xl6715205 width=174 style='border-top:none;border-left:none;
+  width:131pt'>1</td>
+  <td class=xl6315205>&nbsp;</td>
+ </tr>
+ <tr height=22 style='height:16.5pt'>
+  <td height=22 class=xl6315205 style='height:16.5pt'>&nbsp;</td>
+  <td class=xl6315205>&nbsp;</td>
+  <td class=xl6315205>&nbsp;</td>
+  <td class=xl6315205>&nbsp;</td>
+  <td class=xl6315205>&nbsp;</td>
+  <td class=xl6315205>&nbsp;</td>
+  <td class=xl6615205>&nbsp;</td>
+  <td class=xl6315205>&nbsp;</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=51 style='width:38pt'></td>
+  <td width=141 style='width:106pt'></td>
+  <td width=360 style='width:270pt'></td>
+  <td width=319 style='width:239pt'></td>
+  <td width=370 style='width:278pt'></td>
+  <td width=202 style='width:152pt'></td>
+  <td width=174 style='width:131pt'></td>
+  <td width=64 style='width:48pt'></td>
+ </tr>
+ <![endif]>
+</table>
+</div>
+<h3>İstifadəyə verilən fiziki kanallar</h3>
+<div>
+<table border=0 cellpadding=0 cellspacing=0 width=1066 style='border-collapse:
+ collapse;table-layout:fixed;width:801pt'>
+ <col width=66 style='mso-width-source:userset;mso-width-alt:2413;width:50pt'>
+ <col width=540 style='mso-width-source:userset;mso-width-alt:19748;width:405pt'>
+ <col width=198 span=2 style='mso-width-source:userset;mso-width-alt:7241;
+ width:149pt'>
+ <col width=64 style='width:48pt'>
+ <tr height=79 style='mso-height-source:userset;height:59.25pt'>
+  <td rowspan=2 height=158 class=xl7016779 width=66 style='border-bottom:1.5pt solid white;
+  height:118.5pt;width:50pt'>¹</td>
+  <td rowspan=2 class=xl7016779 width=540 style='border-bottom:1.5pt solid white;
+  width:405pt'>Xidm&#601;tl&#601;rin ad&#305;</td>
+  <td colspan=2 class=xl6816779 width=396 style='border-right:1.5pt solid white;
+  border-left:none;width:298pt'>Kanallar&#305;n saatl&#305;q
+  istifad&#601;sin&#601; g&ouml;r&#601; tarif (&#399;DV daxil olmaqla), manat</td>
+  <td class=xl6516779 width=64 style='width:48pt'>&nbsp;</td>
+ </tr>
+ <tr height=79 style='mso-height-source:userset;height:59.25pt'>
+  <td height=79 class=xl6616779 width=198 style='height:59.25pt;border-left:
+  none;width:149pt'>&Ccedil;ox y&uuml;kl&#601;nm&#601; vaxt&#305; saat
+  7-d&#601;n 18-d&#601;k</td>
+  <td class=xl6716779 width=198 style='width:149pt'>&#304;dar&#601;,
+  m&uuml;&#601;ssis&#601; v&#601; t&#601;&#351;kilatlar</td>
+  <td class=xl6516779>&nbsp;</td>
+ </tr>
+ <tr height=36 style='mso-height-source:userset;height:27.0pt'>
+  <td height=36 class=xl7116779 width=66 style='height:27.0pt;border-top:none;
+  width:50pt'>&nbsp;</td>
+  <td class=xl7416779 width=540 style='border-top:none;width:405pt'>H&#601;r
+  tam n&#601; natamam saat dan&#305;&#351;&#305;&#287;a g&ouml;r&#601;</td>
+  <td class=xl7416779 width=198 style='border-top:none;border-left:none;
+  width:149pt'>&nbsp;</td>
+  <td class=xl7516779 width=198 style='border-left:none;width:149pt'>&nbsp;</td>
+  <td class=xl6516779>&nbsp;</td>
+ </tr>
+ <tr height=36 style='mso-height-source:userset;height:27.0pt'>
+  <td height=36 class=xl7316779 width=66 style='height:27.0pt;border-top:none;
+  width:50pt'>1</td>
+  <td class=xl7616779 width=540 style='border-left:none;width:405pt'>Respublika
+  daxilind&#601;</td>
+  <td class=xl7316779 width=198 style='border-top:none;border-left:none;
+  width:149pt'>&nbsp;</td>
+  <td class=xl7316779 width=198 style='border-top:none;border-left:none;
+  width:149pt'>&nbsp;</td>
+  <td class=xl6516779>&nbsp;</td>
+ </tr>
+ <tr height=36 style='mso-height-source:userset;height:27.0pt'>
+  <td height=36 class=xl7416779 width=66 style='height:27.0pt;border-top:none;
+  width:50pt'>1.1.</td>
+  <td class=xl7416779 width=540 style='border-top:none;border-left:none;
+  width:405pt'>-&#601;hali v&#601; b&uuml;dc&#601; t&#601;&#351;kilatlar&#305;</td>
+  <td class=xl7416779 width=198 style='border-top:none;border-left:none;
+  width:149pt'>0,3</td>
+  <td class=xl7416779 width=198 style='border-top:none;border-left:none;
+  width:149pt'>0,2</td>
+  <td class=xl6516779>&nbsp;</td>
+ </tr>
+ <tr height=36 style='mso-height-source:userset;height:27.0pt'>
+  <td height=36 class=xl7316779 width=66 style='height:27.0pt;border-top:none;
+  width:50pt'>1.2.</td>
+  <td class=xl7216779 width=540 style='border-left:none;width:405pt'>-M&uuml;dafi&#601;
+  Nazirliyi, H&#601;rbi Hava q&uuml;vv&#601;l&#601;ri v&#601; H&#601;rbi
+  Komissarl&#305;qlar</td>
+  <td class=xl7316779 width=198 style='border-top:none;border-left:none;
+  width:149pt'>0,1</td>
+  <td class=xl7316779 width=198 style='border-top:none;border-left:none;
+  width:149pt'>0,05</td>
+  <td class=xl6516779>&nbsp;</td>
+ </tr>
+ <tr height=36 style='mso-height-source:userset;height:27.0pt'>
+  <td height=36 class=xl7416779 width=66 style='height:27.0pt;border-top:none;
+  width:50pt'>1.3.</td>
+  <td class=xl7416779 width=540 style='border-top:none;border-left:none;
+  width:405pt'>-t&#601;s&#601;rr&uuml;fat hesabl&#305;
+  m&uuml;&#601;ssis&#601;l&#601;r v&#601; dig&#601;r t&#601;&#351;kilatlar</td>
+  <td class=xl7416779 width=198 style='border-top:none;border-left:none;
+  width:149pt'>0,8</td>
+  <td class=xl7416779 width=198 style='border-top:none;border-left:none;
+  width:149pt'>0,4</td>
+  <td class=xl6516779>&nbsp;</td>
+ </tr>
+ <tr height=36 style='mso-height-source:userset;height:27.0pt'>
+  <td height=36 class=xl7316779 width=66 style='height:27.0pt;border-top:none;
+  width:50pt'>2</td>
+  <td class=xl7316779 width=540 style='border-top:none;border-left:none;
+  width:405pt'>MDB v&#601; Baltikyan&#305; &ouml;lk&#601;l&#601;r</td>
+  <td class=xl7316779 width=198 style='border-top:none;border-left:none;
+  width:149pt'>&nbsp;</td>
+  <td class=xl7316779 width=198 style='border-top:none;border-left:none;
+  width:149pt'>&nbsp;</td>
+  <td class=xl6516779>&nbsp;</td>
+ </tr>
+ <tr height=36 style='mso-height-source:userset;height:27.0pt'>
+  <td height=36 class=xl7416779 width=66 style='height:27.0pt;border-top:none;
+  width:50pt'>2.1.</td>
+  <td class=xl7416779 width=540 style='border-top:none;border-left:none;
+  width:405pt'>-&#601;hali v&#601; b&uuml;dc&#601; t&#601;&#351;kilatlar&#305;</td>
+  <td class=xl7416779 width=198 style='border-top:none;border-left:none;
+  width:149pt'>1,2</td>
+  <td class=xl7416779 width=198 style='border-top:none;border-left:none;
+  width:149pt'>0,8</td>
+  <td class=xl6516779>&nbsp;</td>
+ </tr>
+ <tr height=36 style='mso-height-source:userset;height:27.0pt'>
+  <td height=36 class=xl7316779 width=66 style='height:27.0pt;border-top:none;
+  width:50pt'>2.2.</td>
+  <td class=xl7316779 width=540 style='border-top:none;border-left:none;
+  width:405pt'>-t&#601;s&#601;rr&uuml;fat hesabl&#305;
+  m&uuml;&#601;ssis&#601;l&#601;r v&#601; dig&#601;r t&#601;&#351;kilatlar</td>
+  <td class=xl7316779 width=198 style='border-top:none;border-left:none;
+  width:149pt'>6</td>
+  <td class=xl7316779 width=198 style='border-top:none;border-left:none;
+  width:149pt'>4</td>
+  <td class=xl6516779>&nbsp;</td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl6516779 style='height:15.75pt'>&nbsp;</td>
+  <td class=xl6516779>&nbsp;</td>
+  <td class=xl6516779>&nbsp;</td>
+  <td class=xl6516779>&nbsp;</td>
+  <td class=xl6516779>&nbsp;</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=66 style='width:50pt'></td>
+  <td width=540 style='width:405pt'></td>
+  <td width=198 style='width:149pt'></td>
+  <td width=198 style='width:149pt'></td>
+  <td width=64 style='width:48pt'></td>
+ </tr>
+ <![endif]>
+</table>
+</div>
+<h3>IP-TV</h3>
+<div>
+<table border=0 cellpadding=0 cellspacing=0 width=630 style='border-collapse:
+ collapse;table-layout:fixed;width:474pt'>
+ <col width=62 style='mso-width-source:userset;mso-width-alt:2267;width:47pt'>
+ <col width=173 style='mso-width-source:userset;mso-width-alt:6326;width:130pt'>
+ <col width=156 style='mso-width-source:userset;mso-width-alt:5705;width:117pt'>
+ <col width=189 style='mso-width-source:userset;mso-width-alt:6912;width:142pt'>
+ <col width=50 style='mso-width-source:userset;mso-width-alt:1828;width:38pt'>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl653110 width=62 style='height:15.75pt;width:47pt'>&nbsp;</td>
+  <td class=xl653110 width=173 style='width:130pt'>&nbsp;</td>
+  <td class=xl653110 width=156 style='width:117pt'>&nbsp;</td>
+  <td class=xl653110 width=189 style='width:142pt'>&nbsp;</td>
+  <td class=xl653110 width=50 style='width:38pt'>&nbsp;</td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl653110 style='height:15.75pt'>&nbsp;</td>
+  <td rowspan=3 class=xl663110 width=173 style='border-bottom:1.5pt solid white;
+  width:130pt'>¹</td>
+  <td rowspan=3 class=xl663110 width=156 style='border-bottom:1.5pt solid white;
+  width:117pt'>Bird&#601;f&#601;lik qo&#351;ulma haqq&#305; (AZN)</td>
+  <td rowspan=3 class=xl663110 width=189 style='border-bottom:1.5pt solid white;
+  width:142pt'>Ayl&#305;q istifad&#601; haqq&#305; (AZN)</td>
+  <td class=xl653110>&nbsp;</td>
+ </tr>
+ <tr height=32 style='mso-height-source:userset;height:24.0pt'>
+  <td height=32 class=xl653110 style='height:24.0pt'>&nbsp;</td>
+  <td class=xl653110>&nbsp;</td>
+ </tr>
+ <tr height=24 style='mso-height-source:userset;height:18.0pt'>
+  <td height=24 class=xl653110 style='height:18.0pt'>&nbsp;</td>
+  <td class=xl653110>&nbsp;</td>
+ </tr>
+ <tr height=26 style='mso-height-source:userset;height:19.5pt'>
+  <td height=26 class=xl653110 style='height:19.5pt'>&nbsp;</td>
+  <td class=xl693110 width=173 style='border-top:none;width:130pt'>1</td>
+  <td class=xl693110 width=156 style='border-top:none;border-left:none;
+  width:117pt'>5</td>
+  <td class=xl693110 width=189 style='border-top:none;border-left:none;
+  width:142pt'>7</td>
+  <td class=xl653110>&nbsp;</td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl653110 style='height:15.75pt'>&nbsp;</td>
+  <td class=xl653110>&nbsp;</td>
+  <td class=xl653110>&nbsp;</td>
+  <td class=xl653110>&nbsp;</td>
+  <td class=xl653110>&nbsp;</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=62 style='width:47pt'></td>
+  <td width=173 style='width:130pt'></td>
+  <td width=156 style='width:117pt'></td>
+  <td width=189 style='width:142pt'></td>
+  <td width=50 style='width:38pt'></td>
+ </tr>
+ <![endif]>
+</table>
+</div>
+<h3>Internet</h3>
+<div>
+<table border=0 cellpadding=0 cellspacing=0 width=488 style='border-collapse:
+ collapse;table-layout:fixed;width:366pt'>
+ <col width=64 style='width:48pt'>
+ <col width=180 span=2 style='mso-width-source:userset;mso-width-alt:6582;
+ width:135pt'>
+ <col width=64 style='width:48pt'>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl639921 width=64 style='height:15.75pt;width:48pt'>&nbsp;</td>
+  <td class=xl639921 width=180 style='width:135pt'>&nbsp;</td>
+  <td class=xl639921 width=180 style='width:135pt'>&nbsp;</td>
+  <td class=xl639921 width=64 style='width:48pt'>&nbsp;</td>
+ </tr>
+ <tr height=68 style='mso-height-source:userset;height:51.0pt'>
+  <td height=68 class=xl639921 style='height:51.0pt'>&nbsp;</td>
+  <td class=xl649921 width=180 style='width:135pt'>4096 kbit/s</td>
+  <td class=xl659921 width=180 style='border-left:none;width:135pt'>20 AZN</td>
+  <td class=xl639921>&nbsp;</td>
+ </tr>
+ <tr height=68 style='mso-height-source:userset;height:51.0pt'>
+  <td height=68 class=xl639921 style='height:51.0pt'>&nbsp;</td>
+  <td class=xl669921 width=180 style='border-top:none;width:135pt'>5120 kbit/s</td>
+  <td class=xl679921 width=180 style='border-top:none;border-left:none;
+  width:135pt'>30 AZN</td>
+  <td class=xl639921>&nbsp;</td>
+ </tr>
+ <tr height=68 style='mso-height-source:userset;height:51.0pt'>
+  <td height=68 class=xl639921 style='height:51.0pt'>&nbsp;</td>
+  <td class=xl649921 width=180 style='border-top:none;width:135pt'>6144 kbit/s</td>
+  <td class=xl659921 width=180 style='border-top:none;border-left:none;
+  width:135pt'>40 AZN</td>
+  <td class=xl639921>&nbsp;</td>
+ </tr>
+ <tr height=68 style='mso-height-source:userset;height:51.0pt'>
+  <td height=68 class=xl639921 style='height:51.0pt'>&nbsp;</td>
+  <td class=xl669921 width=180 style='border-top:none;width:135pt'>8192 kbit/s</td>
+  <td class=xl679921 width=180 style='border-top:none;border-left:none;
+  width:135pt'>60 AZN</td>
+  <td class=xl639921>&nbsp;</td>
+ </tr>
+ <tr height=68 style='mso-height-source:userset;height:51.0pt'>
+  <td height=68 class=xl639921 style='height:51.0pt'>&nbsp;</td>
+  <td class=xl649921 width=180 style='border-top:none;width:135pt'>10240 kbit/s</td>
+  <td class=xl659921 width=180 style='border-top:none;border-left:none;
+  width:135pt'>80 AZN</td>
+  <td class=xl639921>&nbsp;</td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl639921 style='height:15.75pt'>&nbsp;</td>
+  <td class=xl639921>&nbsp;</td>
+  <td class=xl639921>&nbsp;</td>
+  <td class=xl639921>&nbsp;</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=64 style='width:48pt'></td>
+  <td width=180 style='width:135pt'></td>
+  <td width=180 style='width:135pt'></td>
+  <td width=64 style='width:48pt'></td>
+ </tr>
+ <![endif]>
+</table>
+</div>
+</div>
+ </div>
+   <div align="center" class="bt4" title="Xidmət ərazisi" style="display: none">
+  	
+	Bakı şəhəri və Naxçıvan Muxtar Respublikasının ərazisi istisna olmaq şərti ilə respublikanın qalan şəhər, rayon və kəndlərində xidmət verilir.<hr />
+	<img src="tae.png" height="570px"/>
+  </div>
+  <div align="center" class="bt5" title="Qoşulma qaydaları" style="display: none">
+<img  src="qosulma.png" height="500px"/>
+  </div>
+  <div align="center" class="bt6" title="Bizimlə əlaqə" style="display: none">
+  	<table><tr><td align="center"><img width="960px" src="contact.png"/></td></tr><tr><td>
+<div id="contact">İctimaiyyətlə əlaqələr üzrə baş mütəxəssis<br/>
+Tel: 344-00-00 (2-59)<br/>
+e-mail: prm@aztelekom.net</div><div id="contact2">Məktublar şöbəsi:<br/>
+Tel: 344-00-00 (2-21)<br/>
+e-mail: kmbs@aztelekom.net</div>
+
+</td></tr></table>
+  </div>
+
+  <div class="footer" id="footer"><div id="contact">E-mail: kmbs@aztelekom.net<br /> URL: http://aztelekom.org</div><div id="contact2">Ünvan:Bakı ş.,Tbilisi pr., məh.3166.<br />Tel:(+994 12) 3440000</div></div>
+</body>
+</html>
